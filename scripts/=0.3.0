@@ -1,0 +1,37 @@
+Requirement already satisfied: omegaconf in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (2.3.0)
+Requirement already satisfied: pytorch-lightning in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (2.0.2)
+Requirement already satisfied: einops in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (0.6.1)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from omegaconf) (4.9.3)
+Requirement already satisfied: PyYAML>=5.1.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from omegaconf) (6.0)
+Requirement already satisfied: numpy>=1.17.2 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (1.24.3)
+Requirement already satisfied: torch>=1.11.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (1.11.0)
+Requirement already satisfied: tqdm>=4.57.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (4.65.0)
+Requirement already satisfied: fsspec[http]>2021.06.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (2023.4.0)
+Requirement already satisfied: torchmetrics>=0.7.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (0.11.4)
+Requirement already satisfied: packaging>=17.1 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (23.1)
+Requirement already satisfied: typing-extensions>=4.0.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (4.5.0)
+Requirement already satisfied: lightning-utilities>=0.7.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from pytorch-lightning) (0.8.0)
+Requirement already satisfied: requests in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from fsspec[http]>2021.06.0->pytorch-lightning) (2.29.0)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading aiohttp-3.8.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+[?25l                                              0.0/1.0 MB ? eta -:--:--[2K     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ 1.0/1.0 MB 61.8 MB/s eta 0:00:01[2K     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 28.8 MB/s eta 0:00:00
+[?25hRequirement already satisfied: attrs>=17.3.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning) (23.1.0)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning) (3.1.0)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading multidict-6.0.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (121 kB)
+[?25l                                              0.0/121.3 kB ? eta -:--:--[2K     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.3/121.3 kB 14.3 MB/s eta 0:00:00
+[?25hCollecting async-timeout<5.0,>=4.0.0a3 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting yarl<2.0,>=1.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading yarl-1.9.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (266 kB)
+[?25l                                              0.0/266.9 kB ? eta -:--:--[2K     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.9/266.9 kB 22.7 MB/s eta 0:00:00
+[?25hCollecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading frozenlist-1.3.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (161 kB)
+[?25l                                              0.0/161.3 kB ? eta -:--:--[2K     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.3/161.3 kB 17.9 MB/s eta 0:00:00
+[?25hCollecting aiosignal>=1.1.2 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning)
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: idna<4,>=2.5 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in /users/junzheyin/anaconda3/envs/myenv/lib/python3.8/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning) (2022.12.7)
+Installing collected packages: multidict, frozenlist, async-timeout, yarl, aiosignal, aiohttp
+Successfully installed aiohttp-3.8.4 aiosignal-1.3.1 async-timeout-4.0.2 frozenlist-1.3.3 multidict-6.0.4 yarl-1.9.2
